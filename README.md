@@ -9,4 +9,5 @@
 3. Create a virtual env with python 
 4. `virtualenv venv`
 5. Activate the venv with `source venv/bin/activate`
-6. Execute the project in localhost with `sls offline`
+6. Install all requirements by `pip3 install -r requirements.txt`
+7. Execute the project in localhost with `sls offline`
