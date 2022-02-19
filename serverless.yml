@@ -1,0 +1,48 @@
+org: lzamora2798
+app: aws-python-http-api
+service: aws-python-http-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.8
+	
+custom:
+  s3:
+    host: 0.0.0.0
+    port: 4002
+    directory: /tmp/serverless-s3-offline
+resources:
+  Resources:
+    NewResource:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: local-bucket
+functions:
+  statistics:
+    handler: src.handlerOne.statistics
+    events:
+      - httpApi:
+          path: /statistics
+          method: post
+  filter:
+    handler: src.handlerTwo.filter
+    events:
+      - httpApi:
+          path: /filter
+          method: post
+  load:
+    handler: src.handlerThree.upload
+    events:
+      - httpApi:
+          path: /upload
+          method: get
+  email:
+    handler: src.handlerThree.email
+    events:
+      - s3:
+          bucket: local-bucket
+          event: s3:ObjectCreated:*
+plugins:
+  - serverless-offline
+  - serverless-s3-local
