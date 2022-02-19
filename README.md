@@ -4,8 +4,9 @@
 
 # Run project
 
-1. Run `npm install`
-2. Create a virtual env with python 
-3. `virtualenv venv`
-4. Activate the venv with `source venv/bin/activate`
-5. Execute the project in localhost with `sls offline`
+1. Install Serveless by `npm install -g serverless`
+2. Run `npm install`
+3. Create a virtual env with python 
+4. `virtualenv venv`
+5. Activate the venv with `source venv/bin/activate`
+6. Execute the project in localhost with `sls offline`
