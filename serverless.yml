@@ -25,12 +25,12 @@ functions:
       - httpApi:
           path: /filter
           method: post
-  # load:
-  #   handler: src.handlerMail.upload
-  #   events:
-  #     - httpApi:
-  #         path: /upload
-  #         method: get
+  load:
+    handler: src.handlerMail.upload
+    events:
+      - httpApi:
+          path: /upload
+          method: get
   email:
     handler: src.handlerMail.email
     events:

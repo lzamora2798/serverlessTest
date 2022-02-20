@@ -1,5 +1,4 @@
 import json
-from multiprocessing import Event
 from src.exerciseTwo import buildFilter
 
 
@@ -14,7 +13,7 @@ def filterLogs(event, context):
         if len(finalList) > 0:
             response = {"statusCode": 200, "body": json.dumps(finalList)}
         else:
-            response = {"statusCode": 400, "body": json.dumps({"message":"No Data"})}
+            response = {"statusCode": 400, "body": json.dumps({"message":"No Data"})}   
         return response
     except Exception as ex: 
         body = {

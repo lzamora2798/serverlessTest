@@ -1,6 +1,6 @@
 # serverlessTest
 
-**ServerlessTest** is a set of function that works whit the framework serverless, each of them uses different programming algoritm
+**Serverless Test** is a set of function that works with the framework serverless, each of them uses different programming algorithm
 
 # Run project
 
@@ -14,13 +14,13 @@
 
 # Run All test
 
-1. go to `cd src`
-2. execute `python -m unittest discover tests`
+2. execute `python -m unittest discover src/tests`
 
 # Run Unitary test
 
 on the `src` folder execute depending on the function
 
-1. `python -m unittest tests/test_ExcerciseOne.py`
-2. `python -m unittest tests/test_ExcerciseTwor.py`
-3. `python -m unittest tests/test_handlerFilter.py`
+1. `python -m unittest src/tests/test_ExcerciseOne.py`
+2. `python -m unittest src/tests/test_ExcerciseTwor.py`
+3. `python -m unittest src/tests/test_handlerFilter.py`
+4. `python -m unittest src/tests/test_handlerMail.py`
