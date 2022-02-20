@@ -19,26 +19,20 @@ resources:
       Properties:
         BucketName: local-bucket
 functions:
-  statistics:
-    handler: src.handlerOne.statistics
-    events:
-      - httpApi:
-          path: /statistics
-          method: post
   filter:
-    handler: src.handlerTwo.filter
+    handler: src.handlerFilter.filterLogs
     events:
       - httpApi:
           path: /filter
           method: post
-  load:
-    handler: src.handlerThree.upload
-    events:
-      - httpApi:
-          path: /upload
-          method: get
+  # load:
+  #   handler: src.handlerMail.upload
+  #   events:
+  #     - httpApi:
+  #         path: /upload
+  #         method: get
   email:
-    handler: src.handlerThree.email
+    handler: src.handlerMail.email
     events:
       - s3:
           bucket: local-bucket

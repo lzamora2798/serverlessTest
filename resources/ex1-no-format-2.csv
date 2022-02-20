@@ -1,0 +1,9 @@
+20211102T00:00  - SUCCESS: No problem here.
+20210901 - INFO: Some info here.
+20210703 - ERROR [1]: Non  severe error. 
+20210404 - ERROR [5]: Severe error.
+20211105 - ERROR [3]: Severe error.
+20211102 - SUCCESS: No problem here.
+20211106 - ERROR [1]: Non  severe error.
+20211103 - ERROR [1]: Non severe error.
+20211102 - SUCCESS: No error this time.
