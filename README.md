@@ -14,11 +14,13 @@
 
 # Run All test
 
-2. execute `python -m unittest discover src/tests`
+everything must be run in python3.X and upper versions
+
+1. execute on the root folder `python -m unittest discover src/tests`
 
 # Run Unitary test
 
-on the `src` folder execute depending on the function
+on the root folder execute depending on the function
 
 1. `python -m unittest src/tests/test_ExcerciseOne.py`
 2. `python -m unittest src/tests/test_ExcerciseTwor.py`
