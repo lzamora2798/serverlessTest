@@ -1,6 +1,4 @@
 
-from tkinter import E
-
 
 def buildStadistics(file=[]):  
     newDic = {}
