@@ -14,7 +14,7 @@
 
 # Run All test
 
-everything must be run in python3.X and upper versions
+everything must be run in python3.X and upper versions and principal project must be online by running `sls offline` in annother command line
 
 1. execute on the root folder `python -m unittest discover src/tests`
 
